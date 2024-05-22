@@ -74,7 +74,7 @@ export default function PostCard({id,content,created_at,photos,profiles:authorPr
     }
   }
 
-  const isLikedByMe = !!likes.find(like => like.user_id === myProfile?.id);
+  const isLikedByMe = Array.isArray(likes) && !!likes.find(likes => likes.user_id === myProfile?.id);
 
   function toggleLike() {
     if (isLikedByMe) {
