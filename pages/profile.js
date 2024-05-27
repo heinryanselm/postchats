@@ -93,7 +93,7 @@ export default function ProfilePage() {
                   )}
                   {!editMode && (
                     <div className="text-gray-500 leading-4">
-                      {profile?.place || 'Internet'}
+                      {profile?.place || 'United Kingdom'}
                     </div>
                   )}
                   {editMode && (
